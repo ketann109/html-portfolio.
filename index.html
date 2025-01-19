@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Password Strength Checker by Password Shield">
+  <title>Password Shield</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="shield_icon.png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="branding">
+      
+      <h1>Password Shield</h1>
+    </div>
+    <p>Evaluate your password strength with precision and expert tips.</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="password-checker">
+      <h2>Check Your Password Strength</h2>
+      <!-- Input Field -->
+      <div class="password-wrapper">
+        <input
+          type="password"
+          id="password-input"
+          placeholder="Type your password"
+          autocomplete="off"
+          aria-label="Enter Password"
+        />
+        <button id="toggle-visibility" aria-label="Show Password">
+          👁️
+        </button>
+        <button id="copy-password" aria-label="Copy Password">
+          📋
+        </button>
+      </div>
+
+      <!-- Feedback Section -->
+      <div class="feedback-container">
+        <div class="circle-indicator">
+          <span id="feedback-icon">🔒</span>
+        </div>
+        <div class="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+        <p id="strength-feedback"></p>
+      </div>
+
+      <!-- Advanced Tips -->
+      <div class="tips-section">
+        <h3>Password Tips</h3>
+        <ul id="tips-list">
+          <li id="length-tip">✔ Use at least <b>8 characters</b></li>
+          <li id="uppercase-tip">✔ Include <b>uppercase</b> letters</li>
+          <li id="lowercase-tip">✔ Include <b>lowercase</b> letters</li>
+          <li id="number-tip">✔ Add <b>numbers</b></li>
+          <li id="symbol-tip">✔ Use <b>special symbols</b> (e.g., #, @, $)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Password Shield | Your Security. Our Priority.</p>
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">🌗</button>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
