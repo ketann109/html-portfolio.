@@ -1,0 +1,192 @@
+/* styles.css */
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #001f3f; /* Dark Blue Background */
+  color: #e0e8f9; /* Light Text */
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Header Styling */
+.app-header {
+  text-align: center;
+  background: linear-gradient(135deg, #00102c, #00224f); /* Dark Blue Gradient */
+  color: #e0e8f9;
+  padding: 20px 15px;
+}
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 60px;
+  margin-right: 15px;
+}
+.app-header h1 {
+  font-size: 2.5rem;
+}
+.app-header p {
+  color: #a9c4ff;
+  margin-top: 5px;
+}
+
+/* Password Checker Section */
+.password-checker {
+  max-width: 700px;
+  background: #002d5a; /* Dark Blue Box */
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.password-checker h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #aed9ff;
+}
+
+/* Input Wrapper */
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#password-input {
+  flex-grow: 1;
+  padding: 15px;
+  border: 2px solid #004a91; /* Dark Blue Border */
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #013661; /* Input Background */
+  color: #e0e8f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#password-input:focus {
+  border-color: #0a82ff; /* Focus Border */
+  box-shadow: 0 0 10px #0a82ff;
+  outline: none;
+}
+button {
+  padding: 10px;
+  background: #004a91; /* Dark Blue Button */
+  border: none;
+  color: #e0e8f9;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background: #0a82ff; /* Lighter Blue on Hover */
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(0);
+}
+
+/* Feedback Styling */
+.feedback-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.circle-indicator {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #1a4970; /* Dark Blue Circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.progress-container {
+  flex-grow: 1;
+  background: #1a4970; /* Dark Progress Background */
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #e53935, #fbc02d, #43a047);
+  transition: width 0.5s ease, background 0.5s ease;
+}
+#strength-feedback {
+  font-weight: bold;
+  color: #aed9ff;
+  margin-top: 5px;
+}
+
+/* Tips Section */
+.tips-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #aed9ff;
+}
+.tips-section ul {
+  list-style: none;
+  padding-left: 10px;
+  color: #e0e8f9;
+}
+.tips-section li {
+  margin-bottom: 10px;
+}
+.tips-section .met {
+  color: #43a047; /* Green for met criteria */
+  text-decoration: line-through;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  color: #a9c4ff;
+}
+#theme-toggle {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #002d5a;
+  color: #e0e8f9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#theme-toggle:hover {
+  background: #0a82ff;
+}
+
+/* Transitions */
+.dark-theme {
+  background-color: #000a14;
+  color: #d8eaff;
+}
+
+.dark-theme .password-checker {
+  background: #00172f;
+}
+
+.dark-theme #password-input {
+  background: #00264a;
+  border-color: #005080;
+}
+
+.dark-theme button {
+  background: #00264a;
+}
+
+.dark-theme footer {
+  background: #001a33;
+}
